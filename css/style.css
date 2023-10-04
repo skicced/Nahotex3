@@ -891,7 +891,9 @@
 =========================================================================*/
 .sayhello{
     padding: 100px 0 52px;
+    
 }
+
 .sayThumb{
     position: relative;
     margin-bottom: 48px;
@@ -907,7 +909,7 @@
     letter-spacing: 4.8px;
 }
 .sayThumb img{
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 .saypaddingR{
@@ -985,11 +987,11 @@
 [13] FOOTER
 =========================================================================*/
 .footer{
-    padding: 72px 75px 55px;
+    padding: 20px 0 20px;
+    text-align: center;
+    
 }
-.textWidget{
-    padding-right: 300px;
-}
+
 .widgetTitle{
     font-size: 20px;
     line-height: 1;
@@ -999,9 +1001,18 @@
 .widgetTitle b{
     font-weight: 600;
 }
+.flogow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .flogo{
     width: 133px;
-    margin-bottom: 49px;
+
+    
+    text-align: center;
 }
 .flogo img{
     width: 100%;
