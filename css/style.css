@@ -2426,4 +2426,59 @@
     border-color: #313131
 }
 
+/* Portfolio munkák*/
 
+.portfolio{
+    background-color: red;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    padding: 5rem;
+    height: 100vh;
+}
+.button-group-wrap{
+    margin: auto;
+    padding: 15px;
+}
+.button-group-wrap h3{
+    display: inline-block;
+    font-weight: 600;
+    margin: 0 5px 5px;
+}
+.button-group-wrap .button-group {
+    display: inline-block;
+}
+.filter-button-group {
+    margin-bottom: 20px;
+}
+.button-group button {
+    min-width: 50px;
+    background-color: #222;
+    color: white;
+    padding: 5px 10px;
+    margin: -1.75px;
+    border: 1px solid #222;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+.button-group button:hover{
+    background-color: #01B1FD;
+    border: 1px solid #01B1FD;
+}
+
+.button-group button:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.button-group button:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.box-item{
+    width: calc(33.3% - 30px);
+    height: 90px;
+    background-color: blue;
+    box-shadow: 0 0 5px black;
+    margin: 15px;
+    padding: 5px 0;
+}
