@@ -134,12 +134,18 @@
 .mainMenu ul ul.sub-menu li:last-child{
     border-bottom: none;
 }
-.mainMenu ul ul.sub-menu li a {
+.mainMenu ul ul.sub-menu li a  {
     color: #333;
     font-size: 12px !important;
     font-weight: 500 !important;
     letter-spacing: 1px !important;
     display: block;
+}
+.port ul li a{
+    color: #333;!important;
+}
+.callus-port p{
+    color: #333!important;
 }
 .mainMenu ul li:hover > a{
     color: #fd0060 !important;
@@ -153,6 +159,9 @@
     letter-spacing: 2.8px;
     text-transform: uppercase;
     font-size: 14px;
+}
+.header-port{
+    background-color: white;
 }
 .isSticky.fixedHeader{
     position: fixed;
@@ -2429,20 +2438,27 @@
 /* Portfolio munkák*/
 
 .portfolio{
-    background-color: red;
-    margin: auto;
+    padding-top: 10rem ;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 100%;
-    height: fit-content;
-    padding: 5rem;
-    height: 100vh;
 }
+
+
+
 .button-group-wrap{
     margin: auto;
     padding: 15px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
 }
 .button-group-wrap h3{
     display: inline-block;
-    font-weight: 600;
+    font-weight: 800;
     margin: 0 5px 5px;
 }
 .button-group-wrap .button-group {
@@ -2453,32 +2469,267 @@
 }
 .button-group button {
     min-width: 50px;
-    background-color: #222;
-    color: white;
+    color: #333;
     padding: 5px 10px;
     margin: -1.75px;
-    border: 1px solid #222;
+    border: none;
+    background: none;
     cursor: pointer;
     transition: all 0.1s ease-out;
 }
 .button-group button:hover{
-    background-color: #01B1FD;
-    border: 1px solid #01B1FD;
+    color: #fd0060;
 }
 
-.button-group button:first-child{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-.button-group button:last-child{
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.box-item{
-    width: calc(33.3% - 30px);
-    height: 90px;
-    background-color: blue;
-    box-shadow: 0 0 5px black;
-    margin: 15px;
-    padding: 5px 0;
+
+
+
+/* 18. works */
+/* 18.1. works gallery */
+#works-img-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    align-self: center;
+    width: 80%;
+    }
+    
+    .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    
+    }
+    
+    .image-grid .item-folio {
+    width: 50%;
+    height: 33vw;
+    padding: 1rem;
+    
+    }
+    
+    @media all and (min-width: 1920px) {
+      .image-grid .item-folio {
+        width: 25%;
+        height: 20vw;
+      }
+    }
+    
+    @media only screen and (max-width: 880px) {
+      .image-grid .item-folio {
+        width: 50%;
+        height: 50vw;
+      }
+    }
+    
+    @media only screen and (max-width: 480px) {
+      .image-grid .item-folio {
+        width: 100%;
+        height: 100vw;
+      }
+    }
+    
+    .works-img-all {
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+        -ms-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    }
+    
+    
+    /* 18.2. works gallery description/hover effect */
+    .description {
+    position: absolute;
+    padding: 0 15px;
+    margin-bottom: -4px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+            opacity: 0;
+       -moz-opacity: 0;
+    -webkit-opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.8s ease;
+       -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+         -o-transition: all 0.8s ease;
+            transition: all 0.8s ease;
+    text-align: center;
+    -webkit-pointer-events: none;
+       -moz-pointer-events: none;
+            pointer-events: none;
+    z-index: 10;
+    }
+    
+    .description h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 auto -11px auto;
+    padding: 0;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #ff264a;
+    }
+    
+    .description-second {
+    color: #fff;
+    margin: -3px auto -2px auto;
+    }
+    
+    .item-grid-size:hover .description,
+    .item-grid-size:focus .description {
+    bottom: 5px;
+            opacity: 1;
+       -moz-opacity: 1;
+    -webkit-opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    .item-grid-size {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .item {
+    position: relative;
+    margin-bottom: 0;
+    float: left;
+    }
+    
+    .item:after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+    
+    .item-wh {
+    width: 100%;
+    height: auto;
+    }
+    
+    .item:hover .link-wrap {
+            opacity: 1;
+       -moz-opacity: 1;
+    -webkit-opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    cursor: pointer;
+    }
+    
+    .item:hover .link-wrap span:before,
+    .item:hover .link-wrap span:after {
+            opacity: 1;
+       -moz-opacity: 1;
+    -webkit-opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    
+    .item:hover .link-wrap span:nth-child(1):before,
+    .item:hover .link-wrap span:nth-child(1):after {
+    width: 15px;
+    }
+    
+    .item:hover .link-wrap span:nth-child(2):before,
+    .item:hover .link-wrap span:nth-child(2):after {
+    height: 15px;
+    }
+    
+    .link-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: rgba(0, 0, 0, .85);
+            opacity: 0;
+       -moz-opacity: 0;
+    -webkit-opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+    }
+    
+    .link-wrap span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    }
+    
+    .link-wrap span:before,
+    .link-wrap span:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            opacity: 0.2;
+       -moz-opacity: 0.2;
+    -webkit-opacity: 0.2;
+    filter: alpha(opacity=20);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    }
+    
+  
+  
+  
+
+    /* 1.6. works gallery IMG BACKGROUND portfolio munka kepek image */
+.works-img-1 {
+    background-image: url(../images/work/portfolio/dekor/dekor-img-1.jpg);
+    }
+    
+    .works-img-2 {
+    background-image: url(../images/work/portfolio/himzes/reklam-img-1.jpg);
+    }
+    
+    .works-img-3 {
+    background-image: url(../images/work/portfolio/himzes/reklam-img-1.jpg);
+    }
+    
+    .works-img-4 {
+    background-image: url(../images/work/portfolio/himzes/works-img-1.jpg);
+    }
+    
+    .works-img-5 {
+    background-image: url(../img/works/works-img-5.jpg);
+    }
+    
+    .works-img-6 {
+    background-image: url(../img/works/works-img-6.jpg);
+    }
+    
+    .works-img-7 {
+    background-image: url(../img/works/works-img-7.jpg);
+    }
+    
+    .works-img-8 {
+    background-image: url(../img/works/works-img-8.jpg);
+    }
+.header-port{
+    background: #fcfcfc;
 }
