@@ -141,8 +141,11 @@
     letter-spacing: 1px !important;
     display: block;
 }
+.port div span{
+    background: #333;
+}
 .port ul li a{
-    color: #333;!important;
+    color: #333!important;
 }
 .callus-port p{
     color: #333!important;
@@ -1517,7 +1520,7 @@
     color: #000;
 }
 .workDetailHead {
-    padding: 118px 0 94px;
+    padding: 120px 0 94px;
 }
 .wdhContent {
     padding-bottom: 9px;
@@ -1586,8 +1589,14 @@
     font-weight: 300;
 }
 .rewdContent {
-    padding: 230px 173px 0;
+    padding:  10rem 10rem 0 10rem;
     text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
 }
 .rewdContent h5{
     text-transform: uppercase;
@@ -1647,6 +1656,8 @@
 .relatedWorlSec{
     border-bottom: 1px solid #e9e9e9;
     margin-bottom: 52px;
+    
+    
 }
 .nexprevPagination{
     padding-left: 90px;
