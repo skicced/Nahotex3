@@ -1520,7 +1520,7 @@
     color: #000;
 }
 .workDetailHead {
-    padding: 120px 0 94px;
+    padding: 140px 0 94px;
 }
 .wdhContent {
     padding-bottom: 9px;
@@ -2445,11 +2445,13 @@
 .footer2 .newsletter input[type="email"]{
     border-color: #313131
 }
-
+#phoneword{
+    display: hidden;
+}
 /* Portfolio munkák*/
 
 .portfolio{
-    padding-top: 10rem ;
+    padding-top: 12rem ;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -2743,4 +2745,39 @@
     }
 .header-port{
     background: #fcfcfc;
+}
+.aboutSec {
+    padding:  10rem 10rem 0 10rem;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    
+}
+.aboutSec  h5{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fd0060;
+    margin-bottom: 40px;
+}
+.aboutSec  p{
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 400;
+}
+.aboutImg{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.aboutImg img{
+    width: 50%;
+    height: auto;
+    flex: 0 1 auto;
 }
