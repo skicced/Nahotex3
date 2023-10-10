@@ -152,6 +152,7 @@
         bodyhtml.animate({scrollTop : $(this.hash).offset().top - 68}, 1000);
         return false;
     });
+   
 
     function Scroll(){
 
@@ -506,21 +507,26 @@
     /*=======================================================================
      [12] Mobile Menu
      =========================================================================*/
-    var menu_bar = $('.mobileBar');
-    if(menu_bar.length > 0){
-        menu_bar.on('click', function(){
-            $(this).toggleClass('active');
+     var menu_bar = $('.mobileBar');
+     if(menu_bar.length > 0){
+         menu_bar.on('click', function(){
+             $(this).toggleClass('active');
+             $('.mainMenu > ul').slideToggle('slow');
+         });
+         if(win.width() < 1280)
+         {
+             $(".mainMenu li.has-menu-items > a").on('click', function(){
+                 $(this).parent().toggleClass('active');
+                 $(this).parent().children('.sub-menu').slideToggle('slow');
+                 return false;
+             });
+         }
+     }
+    $(".mainMenu ul li a").on('click', function(){
+            $('.mobileBar').toggleClass('active');
             $('.mainMenu > ul').slideToggle('slow');
         });
-        if(win.width() < 1280)
-        {
-            $(".mainMenu li.has-menu-items > a").on('click', function(){
-                $(this).parent().toggleClass('active');
-                $(this).parent().children('.sub-menu').slideToggle('slow');
-                return false;
-            });
-        }
-    }
+    
 
     //=======================================================
     // Home 3 Mobile Menu
